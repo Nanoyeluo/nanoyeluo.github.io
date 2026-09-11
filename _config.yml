@@ -98,22 +98,6 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: next
 
-# Blog-Like 点赞插件
-## 后端存储点赞数据：Cloudflare | Leancloud | PHP
-## 后端部署教程见插件仓库: https://github.com/2010HCY/Blog-Like
-Blog-Like:
-  enable: false # 是否启用插件（部署好后端后改为 true）
-  Backend: Cloudflare # 后端类型：Cloudflare | Leancloud | PHP
-  CloudflareBackend: # Cloudflare Worker 后端地址，部署后填到这里
-  PHPBackend: # 自部署 PHP 后端地址
-  AppID: # Leancloud AppID
-  AppKEY: # Leancloud AppKEY
-  xianzhi: true # 是否限制点赞数，默认开启
-  number: 5 # 限制每人点赞数，默认为 5
-  GoogleAnalytics: false # 是否向谷歌分析发送点赞事件
-  GAEventCategory: Engagement # 点赞事件类别
-  GAEventAction: Like # 事件名称
-
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 ## 使用 GitHub Actions 自动部署，无需配置 deploy

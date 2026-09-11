@@ -5,7 +5,6 @@
 - 🌐 在线地址：https://nanoyeluo.github.io
 - ⚙️ 框架：Hexo 8 + NexT 8
 - 🚀 部署：GitHub Actions（push 到 `main` 分支自动发布）
-- ❤️ 点赞：hexo-blog-like 插件
 
 ---
 
@@ -181,27 +180,7 @@ git push
 
 ---
 
-## 七、点赞插件说明
-
-本博客使用 [hexo-blog-like](https://github.com/2010HCY/Blog-Like) 插件实现文章点赞功能。点赞数据需要后端存储（Cloudflare / LeanCloud / PHP 三选一），配置位于 `_config.yml` 的 `Blog-Like` 段：
-
-- **Cloudflare 后端**（推荐，免费）：点击下方按钮一键部署，然后把 Worker 地址填入 `CloudflareBackend`：
-  [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/2010HCY/Blog-Likes-Backend)
-- **LeanCloud 后端**：注册 [LeanCloud](https://www.leancloud.com/)，创建应用后把 `AppID` / `AppKEY` 填入配置。
-
-在文章任意位置插入以下代码块即可显示点赞按钮：
-
-```html
-<div id="zan" class="clearfix">
-    <div class="heart" onclick="goodplus(url, flag)"></div>
-    <br>
-    <div id="zan_text"></div>
-</div>
-```
-
----
-
-## 八、参考资料
+## 七、参考资料
 
 - Hexo 官方文档：https://hexo.io/zh-cn/docs/
 - NexT 主题文档：https://theme-next.js.org/docs/
