@@ -113,7 +113,27 @@ description: 文章摘要       # 摘要（可选，用于 SEO）
 | 内容   | 内容   |
 ```
 
-### 4. 草稿功能
+### 4. 绘制 Mermaid 图表
+
+博客已集成 [Mermaid](https://mermaid.js.org/)，在正文中使用 ` ```mermaid ` 代码块即可渲染流程图、时序图、甘特图、类图等：
+
+````markdown
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+````
+
+> 更多图表类型与语法见官方文档：https://mermaid.js.org/intro/
+
+### 5. 代码块一键复制
+
+鼠标悬停在代码块上时，右上角会出现「复制」按钮，点击即可复制代码内容（自动排除行号）。该功能由 NexT 主题内置支持，在 `_config.next.yml` 的 `codeblock.copy_button` 中配置。
+
+### 6. 草稿功能
 
 想先写好不发布？用草稿：
 
@@ -159,6 +179,7 @@ git push
 ├── scaffolds/         # 新文章/页面的模板
 ├── .github/workflows/ # GitHub Actions 自动部署配置
 ├── _config.yml        # Hexo 站点主配置
+├── _config.next.yml   # NexT 主题配置（覆盖主题默认值）
 ├── package.json       # 依赖清单
 └── public/            # 生成的静态文件（已 gitignore，勿提交）
 ```

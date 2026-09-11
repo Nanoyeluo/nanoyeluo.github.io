@@ -1,0 +1,10 @@
+# NexT 主题配置覆盖文件
+# 仅覆盖与默认值不同的项，完整配置见 node_modules/hexo-theme-next/_config.yml
+
+# 代码块设置
+codeblock:
+  # 代码块添加复制按钮（悬停代码块时右上角显示，使用浏览器原生剪贴板 API）
+  copy_button:
+    enable: true
+    # 按钮样式：default | flat | mac
+    style: default

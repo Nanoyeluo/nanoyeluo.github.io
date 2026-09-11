@@ -40,7 +40,10 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -54,6 +57,13 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''
+
+# Mermaid 图表渲染 (hexo-filter-mermaid-diagrams)
+# 正文中使用 ```mermaid 代码块即可渲染流程图/时序图等
+mermaid:
+  enable: true
+  # mermaid.js 版本，通过 NexT inject 加载（见 _config.next.yml）
+  version: "11"
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
