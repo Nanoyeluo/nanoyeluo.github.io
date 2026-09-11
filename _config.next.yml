@@ -8,3 +8,35 @@ codeblock:
     enable: true
     # 按钮样式：default | flat | mac
     style: default
+
+# 本地搜索
+# 依赖插件：hexo-generator-searchdb（已在 package.json 中安装）
+local_search:
+  enable: true
+  # 每篇文章最多显示几条匹配结果，-1 表示显示全部
+  top_n_per_article: 1
+  # 是否对 HTML 转义字符做反转义
+  unescape: false
+  # 是否在页面加载时就预加载搜索索引（false 则首次打开搜索框时才加载）
+  preload: false
+
+# 文章字数统计 & 阅读时长
+# 依赖插件：hexo-word-counter（已在 package.json 中安装）
+# 会在文章顶部 meta 区域显示「字数 / 阅读时长」
+symbols_count_time:
+  # 以独立项显示在文章 meta 中（true），而不是挤在日期同一行
+  separated_meta: true
+  # 是否在页面底部显示站点总字数
+  item_text_total: false
+
+# 不蒜子（Busuanzi）访问统计
+# 在页脚显示全站访客数/访问量，在每篇文章 meta 处显示阅读次数，无需安装插件
+busuanzi_count:
+  enable: true
+  total_visitors: true
+  total_visitors_icon: fa fa-user
+  total_views: true
+  total_views_icon: fa fa-eye
+  # 每篇文章的阅读次数
+  post_views: true
+  post_views_icon: far fa-eye
