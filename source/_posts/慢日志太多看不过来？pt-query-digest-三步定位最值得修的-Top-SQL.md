@@ -98,7 +98,7 @@ docker exec mysql8new sh -c 'grep -c "Query_time" /var/lib/mysql/*-slow.log'
 mysqldumpslow 是 MySQL 发行版自带的工具，本不用装任何东西。但先确认一下容器里有没有：
 
 ```bash
-docker exec mysql8 which mysqldumpslow
+docker exec mysql8new which mysqldumpslow
 # 没有输出 —— 官方 mysql:8.0 镜像装的是精简版 server 包，不带这个 Perl 脚本
 ```
 
