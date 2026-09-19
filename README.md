@@ -209,3 +209,6 @@ git push
 - Hexo 官方文档：https://hexo.io/zh-cn/docs/
 - NexT 主题文档：https://theme-next.js.org/docs/
 - GitHub Pages 部署指南：https://hexo.io/zh-cn/docs/github-pages
+
+
+> **本文同步发布于我的个人博客**：[在个人站阅读体验更佳，欢迎收藏关注。](https://nanoyeluo.github.io/)
